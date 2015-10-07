@@ -1,190 +1,209 @@
-\documentclass[12pt]{article}
-\usepackage{graphicx}
+\documentclass[12pt,a4paper]{moderncv}
 
-\usepackage[margin=1.0in]{geometry}
-\usepackage{multicol}
+\moderncvstyle{classic}
+\moderncvcolor{black}
 
+\usepackage[scale=0.85]{geometry}
 \usepackage[english]{babel}
-\usepackage[utf8x]{inputenc}
-\usepackage[protrusion=true,expansion=true]{microtype}
-\usepackage{amsmath,amsfonts,amsthm}     % Math packages
-\usepackage{graphicx}                    % Enable pdflatex
-\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
-\usepackage{geometry}
-    %\textheight=700px
 
-\usepackage{float}
-\usepackage{etaremune}
-\usepackage{wrapfig}
+\firstname{Patrick}
+\familyname{Dunne}
 
-\usepackage{attachfile}
+\address{Flat 2, 45A Kingston Road,}{ London, SW19 1JW}
+\mobile{(+44) 7919 405 613}
+\email{dunnepatrickj@gmail.com}
 
-\pagestyle{empty}
-
-\setlength\topmargin{0pt}
-\addtolength\topmargin{-\headheight}
-\addtolength\topmargin{-\headsep}
-\setlength\oddsidemargin{0pt}
-\setlength\textwidth{\paperwidth}
-\addtolength\textwidth{-2in}
-\setlength\textheight{\paperheight}
-%\addtolength\textheight{-3in}
-\addtolength\textheight{-2in}
-\usepackage{layout}
-
-\usepackage{sectsty}
-
-\sectionfont{%                      % Change font of \section command
-  %\usefont{OT1}{phv}{b}{n}%       % bch-b-n: CharterBT-Bold font
-    %\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+\newcommand\mycventry[6]{
+  \cventry{#1}{\large #2}{#3}{#4}{#5}{#6}
 }
-
-\newlength{\spacebox}
-\settowidth{\spacebox}{8888888888}          % Box to align text
-\newcommand{\sepspace}{\vspace*{1em}}       % Vertical space macro
-
-\newcommand{\MyName}[1]{ % Name
-        \Huge \usefont{OT1}{phv}{b}{n} \hfill #1
-        \par \normalsize \normalfont}
-        
-\newcommand{\MySlogan}[1]{ % Slogan}{optional)
-        \large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
-        \par \normalsize \normalfont}
-
-\newcommand{\NewPart}[2]{\section*{\uppercase{#1} #2}}
-
-\newcommand{\PersonalEntry}[2]{
-        \noindent\hangindent=2em\hangafter=0 % Indentation
-        \parbox{\spacebox}{        % Box to align text
-        \textit{#1}}               % Entry name}{birth, address, etc.)
-        \hspace{1.5em} #2 \par}    % Entry value
-
-\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
-        \noindent\hangindent=2em\hangafter=0 % Indentation
-        \parbox{\spacebox}{        % Box to align text
-        \textit{#1}}               % Entry name}{birth, address, etc.)
-        \hspace{1.5em} #2 \par}    % Entry value    
-        
-\newcommand{\EducationEntry}[4]{
-        \noindent \textbf{#1:} #3 \hfill      % Study
-        \colorbox{White}{\parbox{6em}{\hfill\color{Black}#2}} \par  % Duration
-        \noindent\hangindent=2em\hangafter=0 \small #4 % Description
-        \normalsize \par}
-
-\newcommand{\WorkEntry}[4]{               % Same as \EducationEntry
-        \noindent \textbf{#1} \hfill      % Jobname
-        \colorbox{White}{\color{White}#2} \par  % Duration
-        \noindent \textit{#3} \par              % Company
-        \noindent\hangindent=2em\hangafter=0 \small #4 % Description
-        \normalsize \par}
-
-\newcommand{\PaperEntry}[7]{
-        \noindent #1, ``\href{#7}{#2}'', \textit{#3} \textbf{#4}, #5 (#6).}
+\newcommand\myitem{\item \normalsize }
 
 
-\newcommand{\ArxivEntry}[3]{
-        \noindent #1, ``\href{http://arxiv.org/abs/#3}{#2}'', \textit{{cond-mat/}#3}.}
-        
-\newcommand{\BookEntry}[4]{
-        \noindent #1, ``\href{#3}{#4}'', \textit{#3}.}
-        
-\newcommand{\FundingEntry}[5]{
-        \noindent #1, ``#2'', \$#3 (#4, #5).}
-
-\newcommand{\TalkEntry}[4]{
-        \noindent #1, #2, #3 #4}
-
-\newcommand{\ThesisEntry}[5]{
-        \noindent #1 -- #2 #3 ``#4'' \textit{#5}}
-
-\newcommand{\CourseEntry}[3]{
-        \noindent \item{#1: \textbf{#2} \\ #3}}
-
+%\namefont \titlefont \addressfont \sectionfont \subsectionfont \hintfont \quotefont
 
 \begin{document}
 
-\title{Patrick Dunne}
-\author{}
-\date{}
-\maketitle
+\makecvtitle
 
-\begin{multicols}{2}
-  \raggedright
-  Flat 2, 45A Kingston Road,\\
-  London,\\
-  SW19 1JW
+%!!Maybe negative vspace
 
-  \columnbreak
+\section{Research Experience}
+\cventry{2012-present}{PhD Student}{Imperial College}{}{}{
+   \begin{itemize}
+   \myitem Carried out searches for invisibly decaying Higgs bosons with the CMS detector
+   \myitem Focussed on the vector boson fusion (VBF) production channel
+   \myitem Currently interpreting the results of these searches as limits on Higgs portal, two Higgs doublet and effective field theory dark matter models and studying data from run II of the LHC
+   \myitem Performed statistical combinations of CMS searches for invisible Higgs decays in different production channels
+   \myitem Co-founded a student seminar club to improve the presentation skills of students and inform the group of our research activities
+   \myitem Expect to submit my PhD early in 2016
+   \end{itemize}
+ }
+\cventry{2013}{Long Term Attachment}{CERN}{}{}{
+   \begin{itemize}
+   \myitem Attached to CERN for four months as part of my PhD research
+   \myitem Carried out detector operations shifts on the CMS detector
+   \end{itemize}
+ }
 
-  Telephone: 07919 405 613\\
-  Email: dunnepatrickj@gmail.com
-\end{multicols}
+\cventry{2012}{Masters Project}{University of Oxford}{}{}{
+   \begin{itemize}
+   \myitem Investigated the `Qjets' algorithm for stochastic jet clustering as part of the ATLAS collaboration
+   \myitem Identified improvements in the resolution of objects within jets with high transverse momentum
+   \end{itemize}
+ }
 
-\section*{RESEARCH EXPERIENCE}
-\EducationEntry{PhD Student}{2012-present}{Imperial College London}{
+\cventry{2005-2011}{Summer Projects}{LLNL, Oxford, CERN, MIT}{}{}{
   \begin{itemize}
-  \item[-] Expect to submit early in 2016
+  \myitem 2011 - Lawrence Livermore National Laboratory (LLNL), California: Performed studies of metals at high pressure using the Jupiter Laser Facility
+  \myitem 2010 - University of Oxford: Analysed data from the CDF experiment searching for non-standard model couplings in VBF produced W bosons
+  \myitem 2007 - CERN: Assisted in assembling a frequency scanning interferometry system for monitoring of the ATLAS detector
+  \myitem 2005 - MIT: Studied algorithms for robot control in the rapid prototyping group
   \end{itemize}
 }
 
-LTA to CERN \\
-\EducationEntry{Summer Projects}{2005-2011}{LLNL, Oxford, CERN, MIT}{
-  Summer Projects: some of Livermore, Oxford, CERN, MIT
+\section{Education}
+\cventry{2008-2012}{MPhys Physics}{University of Oxford}{First class honours degree}{}{}
+\cventry{2005-2008}{5 A levels, 11 GCSEs}{Sutton Grammar School}{}{}{
+  \begin{itemize}
+  \myitem A grades in physics, maths, further maths, electronics and chemistry A levels
+  \myitem Advanced extension awards in physics (distinction) and maths (merit)
+  \end{itemize}
 }
 
-\section*{Relevant Research Skills}
+\section{Academic Awards}
+\cventry{2014}{Poster Prize}{Imperial College Physics Department}{}{}{
+  \begin{itemize}
+  \myitem Judge's favourite poster at the postgraduate summer research symposium
+  \end{itemize}
+}
+ \cventry{2014}{Poster Prize}{Imperial College Graduate School}{}{}{
+  \begin{itemize}
+  \myitem Won second prize in the college wide graduate school poster competition
+  \end{itemize}
+}
+\cventry{2013}{Poster Prize}{STFC}{}{}{
+  \begin{itemize}
+  \myitem Awarded for STFC high energy physics summer school poster competition
+  \end{itemize}
+}
+\cventry{2012}{Peter Fisher Prize}{Trinity College Oxford}{}{}{
+  \begin{itemize}
+  \myitem Prize awarded to the student in college with the best finals results in Physics
+  \end{itemize}
+}
+\cventry{2012}{Mitchell Scholarship for Outstanding Students}{Trinity College Oxford}{}{}{
+  \begin{itemize}
+  \myitem Scholarship awarded to allow promising students to undertake research projects
+  \myitem Funds won used to participate in studies of metals at very high pressures using the Jupiter Laser Facility at Lawrence Livermore National Laboratory
+  \end{itemize}
+}
+\cventry{2010-2012}{Millard Scholarship}{Trinity College Oxford}{}{}{
+  \begin{itemize}
+  \myitem Awarded for continued excellent performance in examinations
+  \end{itemize}
+}
+\cventry{2010}{Gibbs Prize for Public Speaking}{University of Oxford Physics Department}{}{}{
+  \begin{itemize}
+  \myitem Best talk in department-wide physics speaking competition with 170 entries
+  \end{itemize}
+}
+\cventry{2010}{Examiners' Commendation}{Oxford University Physics Department}{}{}{
+  \begin{itemize}
+  \myitem Awarded for outstanding performance in second year practical course
+  \end{itemize}
+}
+\cventry{2009}{Millard Exhibition}{Trinity College Oxford}{}{}{
+  \begin{itemize}
+  \myitem Awarded for performance in preliminary examinations
+  \end{itemize}
+}
 
-\section*{Academic Awards}
-\EducationEntry{P Research Symposium Poster Prize - June 2014 \\
-Graduate School Summer Research Symposium Poster Prize 2nd Place - July 2014 \\
-STFC Summer School Poster Prize - September 2013 \\
-Gibbs Prize for Public Speaking - 2010 \\
-Peter Fisher Prize for Final Results - 2012 \\
-Mitchell Scholarship for Outstanding Undergraduate Students - 2011 \\
-Examiners' Commendation for Second Year Practical Results - 2010 \\
-Millard Exhibition and Scholarship - 2009-2012 \\
-
-\section*{Teaching Experience}
-Undergraduate Lab Demonstrator \\
-Supervised Masters Students \\
 
 
-\section*{Education}
-\EducationEntry{MPhys Physics}{2008-2012}{University of Oxford}{blah!!}
-\EducationEntry{5 A levels, 11 GCSEs}{2005-2008}{Sutton Grammar School}
-               {\begin{itemize}
-                 \item[-] A grades in physics, maths, further Maths, electronics and chemistry
-                 \item[-] Advanced extension awards in physics (distinction) and maths (merit)
-                 \end{itemize}
-               }
+\section{Teaching Experience}
+\cventry{2014-present}{Masters Student Supervision}{Imperial College}{}{}{
+   \begin{itemize}
+   \myitem Padraic Calpin (Imperial College), Searches for VBF produced invisible Higgs
+   \myitem Achilleas Fragkoulis (Imperial College), Searches for VBF produced invisible Higgs
+   \myitem Miha Zgubic (Imperial College), Interpretations of searches for invisible Higgs
+   \end{itemize}
+}
+\cventry{2013-present}{Undergraduate Lab Demonstration}{Imperial College}{}{}{
+  \begin{itemize}
+  \myitem Demonstrated in second year radioactivity lab
+  \myitem Voted best radioactivity lab demonstrator by students in 2013/14 and 2014/15 academic years
+  \myitem Responsible for interviewing students and marking their work
+  \end{itemize}
+}
 
 
-\section*{Membership of Professional Societies}
-IOP 2008-present
+\section{Outreach}
+\cventry{2015}{Searching for the Higgs boson at the LHC}{Sutton Grammar School}{}{}{}
+\cventry{2014}{Royal Society Summer Exhibition}{London}{}{}{}
+\cventry{2013}{Tour Guide}{CMS detector, CERN}{}{}{}
+\cventry{2013}{Bang Fair}{ExCel Centre, London}{}{}{}
 
-\section*{Further Information}
-Driving License \\
-Brief info on Volunteering, D of E and QSA \\
-Languages \\
-\section*{References}
-Gavin \\
-Dave and/or a Higgs Convenor
 
-\section*{Talks Given}
-HIG-13-030 Approval \\
-HIG-14-038 Preapproval \\
-HIG-15-012 Approval and Preapproval \\
-PANIC \\
-IOP \\
-CMS UK 2015 \\
-CMS UK 2014 \\
 
-\section*{Publications}
-HIG-13-013 \\
-HIG-13-030 \\
-HIG-14-038 \\
-HIG-15-012 \\
-126 other publications as part of the CMS collaboration %?? make sure up to date
+\section{Memberships and Collaborations}
+\cventry{2012-present}{CMS Collaboration}{}{}{}{}
+\cventry{2008-present}{Institute of Physics}{}{}{}{}
+\cventry{2012}{ATLAS Collaboration}{}{}{}{}
+
+\section{Talks Given}
+\cventry{2015}{CMS Higgs Group}{Approval and pre-approval talks for analysis HIG-15-012}{}{}{}
+\cventry{2014}{CMS Higgs Group}{Approval talk for analysis HIG-14-038}{}{}{}
+\cventry{2015}{IOP Conference}{Searches for invisible decays of the Higgs boson with the CMS detector}{}{}{}
+\cventry{2015}{CMS UK Collaboration Meeting}{VBF Higgs to Invisible - Towards Run II}{}{}{}
+\cventry{2014}{PANIC Conference}{Searches for invisible decay modes of the Higgs boson with the CMS detector}{}{}{}
+\cventry{2014}{CMS Higgs Group}{Pre-approval talk for analysis HIG-13-030}{}{}{}
+\cventry{2014}{CMS UK Collaboration Meeting}{Higgs to invisible analyses at CMS}{}{}{}
+
+\section{Publications}
+\normalsize Co-author on 134 publications as part of the CMS collaboration (inSPIRE HEP, October 2015) and have an $h_{hep}$ index of 29. Selected papers with substantial contributions are given below: %!! make sure up to date
+
+\bigskip
+
+\cventry{2015}{CMS Collaboration}{`A combination of searches for the invisible decays of the Higgs boson using the CMS detector'}{CMS Physics Analysis Summary - HIG-15-012}{}{
+  \begin{itemize}
+  \myitem Was the main analysis contact for the CMS review process
+  \myitem Performed the statistical combination of the separate searches and studies of correlations between channels
+  \end{itemize}
+}
+\cventry{2015}{CMS Collaboration}{`Search for invisible decays of Higgs bosons in the vector boson fusion production mode'}{CMS Physics Analysis Summary - HIG-14-038}{}{
+  \begin{itemize}
+  \myitem Was the main analysis contact for the CMS review process
+  \myitem Performed the primary analysis and the setting of limits on the Higgs boson invisible branching fraction
+  \end{itemize}
+}
+\cventry{2014}{CMS Collaboration}{`Search for invisible decays of Higgs bosons in the vector boson fusion and associated ZH production modes'}{Eur. Phys. J. C 74 (2014) 2980}{}{
+  \begin{itemize}
+  \myitem Performed a cross-check of the primary analysis and the setting of limits on the Higgs boson invisible branching fraction
+  \end{itemize}
+}
+\cventry{2013}{CMS Collaboration}{`Search for invisible decays of Higgs bosons in the vector boson fusion and associated ZH production modes'}{CMS Physics Analysis Summary - HIG-13-013}{}{
+  \begin{itemize}
+  \myitem Performed a cross-check of the main analysis
+  \end{itemize}
+}
+
+\section{Further Information}
+\cventry{}{Computing}{}{}{}{
+  \begin{itemize}
+  \myitem Experienced in C++, C, python and the ROOT analysis framework
+  \myitem Familiar with the MagGraph and Delphes packages used in Monte Carlo event generation and detector simulation
+  \end{itemize}
+}
+\cventry{}{Languages}{}{}{}{
+  \begin{itemize}
+  \myitem English (native), French and German (limited working proficiency)
+  \end{itemize}
+}
+
+\section{References}
+\cventry{}{Prof Gavin Davies}{Professor of High Energy Physics}{Imperial College}{g.j.davies@imperial.ac.uk}{}
+\cventry{}{Dr David Colling}{Reader in High Energy Physics}{Imperial College}{d.colling@imperial.ac.uk}{}
+\cventry{}{Third referee to be asked!!}{}{}{}{}
 
 
 \end{document}
