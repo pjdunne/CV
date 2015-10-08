@@ -17,26 +17,27 @@
   \cventry{#1}{\large #2}{#3}{#4}{#5}{#6}
 }
 \newcommand\myitem{\item \normalsize }
+\newcommand\mysection[1]{\section{#1}}
 
 
-%\namefont \titlefont \addressfont \sectionfont \subsectionfont \hintfont \quotefont
+%\namefont \titlefont \addressfont \mysectionfont \subsectionfont \hintfont \quotefont
 
 \begin{document}
 
 \makecvtitle
 
-%!!Maybe negative vspace
+%\vspace{-1.5cm}
 
-\vspace{-1cm}
-
-\section{Research Experience}
+\mysection{Research Experience}
 \cventry{2012-present}{PhD Student}{Imperial College}{}{}{
    \begin{itemize}
    \myitem Carried out searches for invisibly decaying Higgs bosons with the CMS detector
    \begin{itemize}
-   \myitem Focussed on the vector boson fusion (VBF) production channel
+   \myitem Focussed on the most powerful vector boson fusion (VBF) production channel
+   \myitem Lead analyser responsible for trigger efficiency measurements, background estimation, systematic uncertainty studies and the setting of limits on the invisible branching fraction of the Higgs boson.
+   \myitem Produced several public results including the first result in the VBF channnel %!!
+   \myitem Lead analyser on statistical combinations of CMS searches for invisible Higgs decays in different production channels. Performed studies of overlaps and correlations between the different analyses and the setting of limits on the invisible branching fraction of the Higgs boson
    \myitem Currently interpreting the results of these searches as limits on Higgs portal, two Higgs doublet and effective field theory dark matter models and studying data from run II of the LHC
-   \myitem Performed statistical combinations of CMS searches for invisible Higgs decays in different production channels
    \end{itemize}
    \myitem Co-founded a student seminar club to improve the presentation skills of students and inform the group of our research activities
    \myitem Expect to submit my PhD early in 2016
@@ -44,7 +45,7 @@
  }
 \cventry{2013}{Long Term Attachment}{CERN}{}{}{
    \begin{itemize}
-   \myitem Attached to CERN for four months as part of my PhD research
+   \myitem Based at CERN for four months as part of my PhD research
    \myitem Carried out detector operations shifts on the CMS detector
    \end{itemize}
  }
@@ -65,7 +66,7 @@
   \end{itemize}
 }
 
-\section{Education}
+\mysection{Education}
 \cventry{2008-2012}{MPhys Physics}{University of Oxford}{First class honours degree}{}{}
 \cventry{2005-2008}{5 A levels, 11 GCSEs}{Sutton Grammar School}{}{}{
   \begin{itemize}
@@ -74,10 +75,10 @@
   \end{itemize}
 }
 
-\section{Academic Awards}
+\mysection{Academic Awards}
 \cventry{2014}{Poster Prize}{Imperial College Physics Department}{}{}{
   \begin{itemize}
-  \myitem Judge's favourite poster at the postgraduate summer research symposium
+  \myitem Prize at the postgraduate summer research symposium
   \end{itemize}
 }
  \cventry{2014}{Poster Prize}{Imperial College Graduate School}{}{}{
@@ -124,7 +125,7 @@
 
 
 
-\section{Teaching Experience}
+\mysection{Teaching Experience}
 \cventry{2014-present}{Masters Student Supervision}{Imperial College}{}{}{
    \begin{itemize}
    \myitem Padraic Calpin (Imperial College), Searches for VBF produced invisible Higgs
@@ -135,67 +136,72 @@
 \cventry{2013-present}{Undergraduate Lab Demonstration}{Imperial College}{}{}{
   \begin{itemize}
   \myitem Demonstrated in second year radioactivity lab
-  \myitem Voted best radioactivity lab demonstrator by students in 2013/14 and 2014/15 academic years
+  \myitem Voted best lab demonstrator by students in AC 2013/14 and 2014/15
   \myitem Responsible for interviewing students and marking their work
   \end{itemize}
 }
 
 
-\section{Outreach}
+\mysection{Outreach}
 \cventry{2015}{Searching for the Higgs boson at the LHC}{Sutton Grammar School}{}{}{}
 \cventry{2014}{Royal Society Summer Exhibition}{London}{}{}{}
+\cventry{2014}{High Energy Physics Masterclass}{Imperial College, London}{}{}{}
 \cventry{2013}{Tour Guide}{CMS detector, CERN}{}{}{}
 \cventry{2013}{Bang Fair}{ExCel Centre, London}{}{}{}
+\cventry{2013}{High Energy Physics Masterclass}{Imperial College, London}{}{}{}
 
 
 
-\section{Memberships and Collaborations}
+
+\mysection{Memberships and Collaborations}
 \cventry{2012-present}{CMS Collaboration}{}{}{}{}
 \cventry{2008-present}{Institute of Physics}{}{}{}{}
 \cventry{2012}{ATLAS Collaboration}{}{}{}{}
 
-\section{Talks}
-\cventry{2015}{CMS Higgs Group}{Approval and pre-approval talks for analysis HIG-15-012}{}{}{}
-\cventry{2014}{CMS Higgs Group}{Approval talk for analysis HIG-14-038}{}{}{}
-\cventry{2015}{IOP Conference}{Searches for invisible decays of the Higgs boson with the CMS detector}{}{}{}
+\mysection{Talks}
+\cventry{2015}{CMS Higgs Group}{Approval and pre-approval talks for analysis HIG-15-012}{A combination of searches for the invisible decays of the Higgs boson using the CMS detector}{}{}
+\cventry{2015}{IOP HEP Group Conference}{Manchester}{Searches for invisible decays of the Higgs boson with the CMS detector}{}{}
 \cventry{2015}{CMS UK Collaboration Meeting}{VBF Higgs to Invisible - Towards Run II}{}{}{}
-\cventry{2014}{PANIC Conference}{Searches for invisible decay modes of the Higgs boson with the CMS detector}{}{}{}
-\cventry{2014}{CMS Higgs Group}{Pre-approval talk for analysis HIG-13-030}{}{}{}
+\cventry{2014}{CMS Higgs Group}{Pre-approval talk for analysis HIG-14-038}{Search for invisible decays of Higgs bosons in the vector boson fusion production mode}{}{}
+\cventry{2014}{PANIC Conference}{Hamburg}{Searches for invisible decay modes of the Higgs boson with the CMS detector}{}{}
+\cventry{2014}{CMS Higgs Group}{Approval talk for analysis HIG-13-030}{Search for invisible decays of Higgs bosons in the vector boson fusion and associated ZH production modes}{}{}
 \cventry{2014}{CMS UK Collaboration Meeting}{Higgs to invisible analyses at CMS}{}{}{}
 
-\section{Publications}
+\mysection{Publications}
 \normalsize Co-author on 134 publications as part of the CMS collaboration (inSPIRE HEP, October 2015) and have an $h_{hep}$ index of 29. Selected papers with substantial contributions are given below: %!! make sure up to date
 
-\bigskip
+\medskip
 
 \cventry{2015}{CMS Collaboration}{`A combination of searches for the invisible decays of the Higgs boson using the CMS detector'}{CMS Physics Analysis Summary - HIG-15-012}{}{
   \begin{itemize}
   \myitem Was the main analysis contact for the CMS review process
-  \myitem Performed the statistical combination of the separate searches and studies of correlations between channels
+  \myitem Lead analyser of the statistical combination of the separate searches and studies of correlations between channels
   \end{itemize}
 }
 \cventry{2015}{CMS Collaboration}{`Search for invisible decays of Higgs bosons in the vector boson fusion production mode'}{CMS Physics Analysis Summary - HIG-14-038}{}{
   \begin{itemize}
   \myitem Was the main analysis contact for the CMS review process
-  \myitem Performed the primary analysis and the setting of limits on the Higgs boson invisible branching fraction
+  \myitem Lead analyser responsible for trigger efficiency measurement, background estimation, systematic uncertainty studies and setting limits on the Higgs boson invisible branching fraction
   \end{itemize}
 }
 \cventry{2014}{CMS Collaboration}{`Search for invisible decays of Higgs bosons in the vector boson fusion and associated ZH production modes'}{Eur. Phys. J. C 74 (2014) 2980}{}{
   \begin{itemize}
-  \myitem Performed a cross-check of the primary analysis and the setting of limits on the Higgs boson invisible branching fraction
+  \myitem One of the lead analysers responsible for background estimation, systematic uncertainty studies and the setting of limits on the Higgs boson invisible branching fraction in the most powerful VBF channel
+  \myitem Lead analyser of the statistical combination of the separate searches and studies of correlations between channels
   \end{itemize}
 }
-\cventry{2013}{CMS Collaboration}{`Search for invisible decays of Higgs bosons in the vector boson fusion and associated ZH production modes'}{CMS Physics Analysis Summary - HIG-13-013}{}{
+\cventry{2013}{CMS Collaboration}{`Search for invisible decays of Higgs bosons in the VBF channel'}{CMS Physics Analysis Summary - HIG-13-013}{}{
   \begin{itemize}
-  \myitem Performed a cross-check of the main analysis
+  \myitem One of the lead analysers responsible for background estimation and systematic uncertainty studies
+  \myitem First limit on Higgs invisible branching fraction in the most sensitive VBF channel
   \end{itemize}
 }
 
-\section{Further Information}
+\mysection{Further Information}
 \cventry{}{Computing}{}{}{}{
   \begin{itemize}
   \myitem Experienced in C++, C, python and the ROOT analysis framework
-  \myitem Used the MagGraph and Delphes packages for Monte Carlo event generation and detector simulation
+  \myitem Use the MagGraph and Delphes packages for Monte Carlo event generation and detector simulation
   \end{itemize}
 }
 \cventry{}{Languages}{}{}{}{
@@ -210,7 +216,7 @@
   \end{itemize}
 }
 
-\section{References}
+\mysection{References}
 \cventry{}{Prof. Gavin Davies}{Professor of High Energy Physics}{Imperial College}{g.j.davies@imperial.ac.uk}{}
 \cventry{}{Dr. David Colling}{Reader in High Energy Physics}{Imperial College}{d.colling@imperial.ac.uk}{}
 \cventry{}{Third referee to be asked!!}{}{}{}{}
